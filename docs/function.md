@@ -12,12 +12,20 @@
 
 例如：
 ```py
+#例1：
 def wai():
     a=1
     def nei():
-      print(a)
+        print(a)
     return nei
-    
-func=war()
-func()
+bibo1=wai()
+bibo1()
+
+#例2：
+def func1(num1):
+    def func2(num2):
+        print(num1,'+',num2,'=',num1+num2)
+    return func2
+bibo2=func1(10)
+bibo2(2)
 ```
