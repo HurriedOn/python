@@ -139,3 +139,13 @@ func2()
 
 Python中，正则使用re模块，该模块为Python发行版本中自带的模块，不需要安装
 
+#### re模块
+re.compile(pattern):编译正则表达式
+
+匹配match从字符串的开头进行匹配
+
+搜索search从字符串的任意部位开始匹配
+
+re.match（pattern，string）：尝试用正则表达式模式pattern匹配字符串string；匹配成功，则返回一个匹配对象，否则放回None；成功是可以使用结果的group函数获取匹配到的值
+
+re.search(pattern,string)：返回字符串中正则表达式pattern的第一次出现
