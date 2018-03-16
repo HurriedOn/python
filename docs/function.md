@@ -55,9 +55,9 @@ print(mylist)      # 输出：[2, 2, 3]
 
 语法：
 ```py
-	@func1
-	def func2():
-		pass
+@func1
+def func2():
+    pass
 ```
 
 装饰器做的事情就是func1(func2)我们传递了一个函数对象到我们的装饰器里面然后先执行装饰器func1其中的内容，然后再执行函数func2
