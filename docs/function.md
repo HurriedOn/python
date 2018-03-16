@@ -28,6 +28,17 @@ def func1(num1):
     return func2
 bibo2=func1(10)
 bibo2(2)
+
+#例3：
+mylist=[1,2,3]
+def func(obj):
+    def func4():
+        obj[0]+=1
+        print(obj)
+    return func4
+
+bibo=func(mylist)
+bibo()
 ```
 闭包私有化了变量，原来需要类对象完成的工作，闭包也可以完成
 
