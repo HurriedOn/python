@@ -211,8 +211,13 @@ urls=re.findall(r'data-layzr="(.*?)"',obj)
 
 index=0
 for imgurl in urls:
-    urlretrieve('http:'+imgurl,'pic'+str(index)+'.jpg')
-    index+=1
+    try:
+        urlretrieve('http:'+imgurl,'pic'+str(index)+'.jpg')
+        index+=1
+    except Exception:
+        print('download error...%d' % index)
+    else:
+        print('download complete...')
 ```
 
 
