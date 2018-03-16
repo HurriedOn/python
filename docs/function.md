@@ -19,7 +19,7 @@ def wai():
         print(a)
     return nei
 bibo1=wai()
-bibo1()
+bibo1()       # 输出：1
 
 #例2：
 def func1(num1):
@@ -27,7 +27,7 @@ def func1(num1):
         print(num1,'+',num2,'=',num1+num2)
     return func2
 bibo2=func1(10)
-bibo2(2)
+bibo2(2)         # 输出：10 + 2 = 12
 
 #例3：
 mylist=[1,2,3]
@@ -38,7 +38,8 @@ def func(obj):
     return func4
 
 bibo=func(mylist)
-bibo()
+bibo()             # 输出：[2, 2, 3]
+print(mylist)      # 输出：[2, 2, 3]
 ```
 闭包私有化了变量，原来需要类对象完成的工作，闭包也可以完成
 
