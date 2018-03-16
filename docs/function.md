@@ -156,5 +156,24 @@ re.search(pattern,string)：返回字符串中正则表达式pattern的第一次
 >>>res=re.match(regex,'abc')
 >>>res.group()
 'a'
+>>>
+>>>
+>>>rul=re.comple('123')
+>>>res=re.search(rul,'abcd123dfdg')
+>>>res
+<_sre.SRE_Match object;span=(4,7),match='123'>
 ```
 
+re.findall(pattern,string):返回字符串中正则表达式pattern的所有(非重复）出现，并且总是返回一个列表
+
+re.sub(str1,str2,str3)
+
+re.subn(str1,str2,str3)
+
+	str1:要替换的字符串
+    
+	str2:替换成什么
+    
+	str3:在哪个字符串例进行替换
+    
+这两个函数都可以实现搜索和替换功能，均返回一个替换之后的新字符，subn函数会返回一个表示替换的总数
