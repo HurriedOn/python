@@ -93,7 +93,7 @@ def func1(func):
 def func(x,y):
     print(x,'+',y,'=',x+y)
 
-func(2,8)
+func(2,8)  #输出：2 8     2 + 8 = 10
 #func1(func(2,8))
 ```
 
