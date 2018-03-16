@@ -123,6 +123,12 @@ def func1():
 def func2():
     print('good day')
 
-func1()
+func1() 
+#输出：
+#do not go
+#bad day
 func2()
+#输出：
+#go
+#good day
 ```
