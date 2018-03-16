@@ -78,8 +78,11 @@ def func1(func):
 def func2():
     print('hell')
 
-func2()   #输出：add  hell
+func2()   
 #func1(func2)()
+# 输出：
+#    add  
+#    hell
 ```
 示例2：
 ```py
@@ -93,7 +96,10 @@ def func1(func):
 def func(x,y):
     print(x,'+',y,'=',x+y)
 
-func(2,8)  #输出：2 8     2 + 8 = 10
+func(2,8)  
 #func1(func(2,8))
+# 输出：
+#    2 8     
+#    2 + 8 = 10
 ```
 
