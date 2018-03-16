@@ -32,3 +32,17 @@
 __init__(self)是一种特殊的方法，专门用在类中，称为类的构造函数或初始化方法，当你创建一个类的实例的时候就会调用这个方法；构造方法也支持重写，如果你没有重写自己的构造函数，系统会有默认的构造函数用来执行。不需要我们显示的调用，一般构造函数在生成实例的过程中为实例初始化数据。
 
 注意：构造函数是不可以有返回值的
+
+```py
+>>>class A:
+     def __init__(self):
+        self.num=1
+#这里我们通过构造函数来给实例对象初始化变量
+>>>A.num
+Traceback(most recent call last):
+ File"<stdin>",line 1,in <module>
+AtrributeError:type object 'A' has no attribute 'num'
+#可以看到因为现在这个变量已经是定义给实例的，所有类已经不能使用了
+#我们想使用这个变量只能是通过实例访问
+
+```
