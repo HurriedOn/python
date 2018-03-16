@@ -149,3 +149,12 @@ re.compile(pattern):编译正则表达式
 re.match（pattern，string）：尝试用正则表达式模式pattern匹配字符串string；匹配成功，则返回一个匹配对象，否则放回None；成功是可以使用结果的group函数获取匹配到的值
 
 re.search(pattern,string)：返回字符串中正则表达式pattern的第一次出现
+
+```py
+>>>import re
+>>>regex=re.compile('^a')
+>>>res=re.match(regex,'abc')
+>>>res.group()
+'a'
+```
+
