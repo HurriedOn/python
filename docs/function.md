@@ -194,6 +194,25 @@ re.subn(str1,str2,str3)
 ('abcdfd',2)
 ```
 
+---
 
+## 简单爬虫
+
+从网页 https://www.dji.com/cn 获取图片，HTML页面代码：<img data-layzr="//www4.djicdn.com/cms_uploads/grid_root/background_image/6/66da36b251648581e3889e337fac7f56.jpg" class="grid-bg">
+
+```py
+from urllib.request import *
+import re
+
+url='https://www.dji.com/cn'
+html=urlopen(url)
+obj=html.read().decode()
+urls=re.findall(r'data-layzr="(.*?)"',obj)
+
+index=0
+for imgurl in urls:
+    urlretrieve('http:'+imgurl,'pic'+str(index)+'.jpg')
+    index+=1
+```
 
 
