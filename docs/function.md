@@ -62,7 +62,7 @@ def func2():
 
 装饰器做的事情就是func1(func2)我们传递了一个函数对象到我们的装饰器里面然后先执行装饰器func1其中的内容，然后再执行函数func2
 
-实例1：
+示例1：
 ```py
 #func1：装饰器函数
 #func2：被装饰的
@@ -81,3 +81,19 @@ def func2():
 func2()   #输出：add  hell
 #func1(func2)()
 ```
+示例2：
+```py
+def func1(func):
+    def add_func(a,b):
+        print(a,b)
+        return func(a,b)
+    return add_func
+
+@func1
+def func(x,y):
+    print(x,'+',y,'=',x+y)
+
+func(2,8)
+#func1(func(2,8))
+```
+
