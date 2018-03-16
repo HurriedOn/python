@@ -1,7 +1,9 @@
 # python
-python学习 https://www.liaoxuefeng.com/
+# python学习资源
+  廖雪峰官网：https://www.liaoxuefeng.com/  <br/>
+  腾讯课堂：https://ke.qq.com/course/162814
 
-#安装
+# 安装
 Miniconda ： https://conda.io/miniconda.html  <br/>
 
 Anaconda 镜像:https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
