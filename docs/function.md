@@ -179,9 +179,19 @@ re.subn(str1,str2,str3)
 ```py
 >>>import re
 >>>regex=re.compile('[0-9]+')
->>>res=re.match(regex,'a123bcd67efg5hj9ki')
+>>>res=re.findall(regex,'a123bcd67efg5hj9ki')
 >>>res
 ['123','67','5','9']
+>>>
+>>>
+>>>mystr='a*b*c'
+>>>re.sub('\*','-',mystr)
+'a-b-c'
+>>>mystr='abc123dfd8'
+>>>re.sub('[0-9]+','',mystr)
+'abcdfd'
+>>>re.subn('[0-9]','',mystr)
+('abcdfd',2)
 ```
 
 
