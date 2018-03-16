@@ -84,7 +84,7 @@ func2()  
 #    add  
 #    hell
 ```
-示例2：
+示例2（被装饰的函数带有参数）：
 ```py
 def func1(func):
     def add_func(a,b):
@@ -102,4 +102,27 @@ func(2,8)
 #    2 8     
 #    2 + 8 = 10
 ```
+示例3（装饰器函数带参数）：
+```py
+def arg_func(arg):
+    def _func(func):
+        def add_func():
+            if arg =='bad':
+                print('do not go')
+            if arg =='good':
+                print('go')
+            return func()
+        return add_func
+    return _func
 
+@arg_func('bad')
+def func1():
+    print('bad day')
+
+@arg_func('good')
+def func2():
+    print('good day')
+
+func1()
+func2()
+```
