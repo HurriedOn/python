@@ -46,3 +46,16 @@ AtrributeError:type object 'A' has no attribute 'num'
 #我们想使用这个变量只能是通过实例访问
 
 ```
+
+```py
+class Student(object):
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+        
+>>> bart = Student('Bart Simpson', 59)
+>>> bart.name
+'Bart Simpson'
+>>> bart.score
+59        
+```
