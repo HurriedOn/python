@@ -175,3 +175,15 @@ re.subn(str1,str2,str3)
 - str3:在哪个字符串例进行替换
     
 这两个函数都可以实现搜索和替换功能，均返回一个替换之后的新字符，subn函数会返回一个表示替换的总数
+
+```py
+>>>import re
+>>>regex=re.compile('[0-9]+')
+>>>res=re.match(regex,'a123bcd67efg5hj9ki')
+>>>res
+['123','67','5','9']
+```
+
+
+
+
