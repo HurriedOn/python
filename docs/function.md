@@ -10,3 +10,14 @@
 
 闭包在运行时可以有多个实例，不同的引用环境和相同的函数组合可以产生不同的实例。
 
+例如：
+```py
+def wai():
+    a=1
+    def nei():
+      print(a)
+    return nei
+    
+func=war()
+func()
+```
