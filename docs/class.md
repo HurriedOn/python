@@ -171,5 +171,5 @@ Traceback (most recent call last):
  File "<stdin>",line 1,in <module>
 AttriButeError:'A' object has no attribute 'sex'
 ```
-我们在给这个实例a添加额外的sex属性时，就会报错了AttributeError
+我们在给这个实例a添加额外的sex属性时，就会报错了`AttributeError`
 
