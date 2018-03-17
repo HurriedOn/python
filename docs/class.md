@@ -67,3 +67,20 @@ class Student(object):
 - 子类实例属于父类
 - 父类实例属于父类
 - 父类实例不属于子类
+
+```py
+>>>class A:
+...  def __init__(self):
+...    print('This is A')
+
+>>>class B:
+...  def __init__(self):
+...    print('This is B')
+ 
+ >>>a=A()
+This is A
+>>>b=B()
+This is B
+>>>isinstance(a,A)
+True
+```
