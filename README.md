@@ -4,7 +4,7 @@
   
   腾讯课堂：https://ke.qq.com/course/162814
   
-  中文文档：http://python.usyiyi.cn/
+  中文文档：http://python.usyiyi.cn/translate/python_352/library/index.html
 
 ## 环境准备
 Miniconda ： https://conda.io/miniconda.html  <br/>
