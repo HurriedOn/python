@@ -1,6 +1,9 @@
 ## python学习资源
-  廖雪峰官网：https://www.liaoxuefeng.com/  <br/>
+
+  廖雪峰官网：https://www.liaoxuefeng.com/  
+  
   腾讯课堂：https://ke.qq.com/course/162814
+  
   中文文档：http://python.usyiyi.cn/
 
 ## 环境准备
