@@ -159,4 +159,17 @@ print('----')
 
 __slots__属性：可以把实例属性锁定到__slots__规定的范围内
 
+```py
+>>>class A:
+...  __slots__=('name','age')
+...
+>>>a=A()
+>>>a.name='Tom'
+>>>a.age=12
+>>>a.sex='man'
+Traceback (most recent call last):
+ File "<stdin>",line 1,in <module>
+AttriButeError:'A' object has no attribute 'sex'
+```
+我们在给这个实例a添加额外的sex属性时，就会报错了AttributeError
 
