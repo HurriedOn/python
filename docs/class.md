@@ -136,3 +136,28 @@ AAA
 
 __del__(self)：在释放对象时调用，也支持重写，可以在里面进行一系列释放资源的操作；不需要显示的调用，也就是说他会自动在对象资源销毁时使用
 
+__new__(self):之前我们都一直在用init函数，把他当作构造实例的一个函数。但其实在他之前，真正起到构造类实例的函数是__new__
+
+```py
+class A:
+    def __del__(self):
+        print('del')
+    def __new__(self):
+        print('new')
+        return super(A,self).__new__(self)
+    def __init__(self):
+        print('init')
+
+a=A()
+print('----')
+
+#输出
+#new
+#init
+#----
+#del
+#[Finished in 0.1s]
+
+```
+
+
