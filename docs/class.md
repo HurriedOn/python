@@ -105,3 +105,20 @@ False
 >>>isinstance(B,A)
 False
 ```
+
+---
+
+## 类中内建函数
+
+__call__(self)这个函数重载了()这个符号，实例出来的对象可以当作函数来用，默认系统是没有实现的
+```class B:
+...  pass
+>>>b=B()
+>>>b()
+TypError:'B' object is not callable
+```
+
+我们经常遇到的这个callable错误就说明你把一个没有重写call函数的对象实例当作函数方法来调用了
+
+
+
