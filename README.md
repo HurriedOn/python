@@ -16,4 +16,4 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 ```
 ## 03：[Python函数](./docs/function.md)
 
-## 04: [Python面向对象](./docs/class.md)
+## 04：[Python面向对象](./docs/class.md)
