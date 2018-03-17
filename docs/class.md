@@ -142,21 +142,21 @@ __new__(self):之前我们都一直在用init函数，把他当作构造实例�
 class A:
     def __del__(self):
         print('del')
-    def __new__(self):
-        print('new')
+    def __new__(self):   # new函数第一个执行，执行过程中，分配空间
+        print('new')
         return super(A,self).__new__(self)
-    def __init__(self):
-        print('init')
+    def __init__(self):  # 数据初始化
+        print('init')
 
 a=A()
 print('----')
 
-#输出
-#new
-#init
-#----
-#del
-#[Finished in 0.1s]
+# 输出
+# new
+# init
+# ----
+# del
+# [Finished in 0.1s]
 
 ```
 
