@@ -64,23 +64,44 @@ class Student(object):
 
 ## 多态
 
+多态：根据数据的类型执行不同的操作
+
+实现多态：在面向对象中实现多态，通过对子类重新父类中已有函数
+
 - 子类实例属于父类
 - 父类实例属于父类
 - 父类实例不属于子类
 
+isinstance() 函数来判断一个对象是否是一个已知的类型，类似 type()。如果要判断两个类型是否相同推荐使用 isinstance()。
+
 ```py
+>>>num = 2
+>>> isinstance (num,int)
+True
+>>>
+>>>
 >>>class A:
-...  def __init__(self):
+...  def func(self):
 ...    print('This is A')
 
->>>class B:
-...  def __init__(self):
+>>>class B(A):
+...  def func(self):
 ...    print('This is B')
  
- >>>a=A()
+>>>a=A()
+>>>a.func()
 This is A
 >>>b=B()
+>>>b.func()
 This is B
+
+# a属于A   b属于B   B继承A
 >>>isinstance(a,A)
 True
+>>>isinstance(b,B)
+True
+>>>isinstance(a,B)
+False
+>>>isinstance(B,A)
+False
 ```
