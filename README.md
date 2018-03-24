@@ -24,4 +24,4 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 
 ## PyQt5小项目
 
-https://github.com/892768447/PyQtClient
+https://github.com/892768447/PyQt
