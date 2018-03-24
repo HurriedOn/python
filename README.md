@@ -19,6 +19,9 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 ## 04：[Python面向对象](./docs/class.md)
 
 
-## [Qt Designer](./qt/designer.md)
+## 05 [Qt Designer](./qt/designer.md)
 
 
+## PyQt5小项目
+
+https://github.com/892768447/PyQtClient
