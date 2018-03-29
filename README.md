@@ -31,3 +31,4 @@ https://github.com/892768447/PyQt
 
 ## [Qt Designer](./qt/designer.md)
 
+## [Qt](./qt/Qt.md)
