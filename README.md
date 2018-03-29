@@ -1,4 +1,4 @@
-## python学习资源
+# python学习资源
 
   廖雪峰官网：https://www.liaoxuefeng.com/  
   
@@ -19,9 +19,14 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 ## 04：[Python面向对象](./docs/class.md)
 
 
-## 05 [Qt Designer](./qt/designer.md)
 
+
+
+# PyQt5小项目
 
 ## PyQt5小项目
 
 https://github.com/892768447/PyQt
+
+## [Qt Designer](./qt/designer.md)
+
