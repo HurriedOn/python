@@ -9,3 +9,19 @@ Qt具有一个相当成熟的GUI框架的实现——这一点感觉比Swing要�
 在Qt里面，状态栏显示的信息有三种类型：临时信息、一般信息和永久信息。其中，临时信息指临时显示的信息，比如QAction的提示等，也可以设置自己的临时信息，比如程序启动之后显示Ready，一段时间后自动消失——这个功能可以使用QStatusBar的showMessage()函数来实现；一般信息可以用来显示页码之类的；永久信息是不会消失的信息，比如可以在状态栏提示用户Caps Lock键被按下之类。
 
 QStatusBar继承自QWidget，因此它可以添加其他的QWidget。
+
+## QTableWidget
+
+---
+
+设置不显示格子线：myTable.setShowGrid(False)
+
+择时每次选择一行：myTable.setSelectionBehavior(QAbstractItemView.SelectRows)，也可以设置参数为SelectColumns，这样就会选择一列。
+
+设置隐藏表头：myTable.horizontalHeader().setVisible(False)
+
+设置表头内容：
+
+    list=[u'宝贝',u'日子',u'多个',u'话费']
+                         
+    myTable.setHorizontalHeaderLabels(list)
