@@ -22,7 +22,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 
 ## [Qt Designer](./qt/designer.md)
 
-## [Qt](./qt/Qt.md)
+## [Qt note](./qt/Qt.md)
 
 ## python3写好的.py文件如何打包成exe
 
@@ -47,11 +47,10 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 拷贝pyqt安装目录中搜索platform文件夹，整个复制到打包的exe目录
 
 
-# PyQt5项目
-
----
-
 ## PyQt5小项目
 
 https://github.com/892768447/PyQt
 
+## Qt 实战
+
+https://blog.csdn.net/liang19890820/article/details/50277095
