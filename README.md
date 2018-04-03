@@ -20,8 +20,26 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 
 ## 04：[Python面向对象](./docs/class.md)
 
+## [Qt Designer](./qt/designer.md)
 
-# PyQt5小项目
+## [Qt](./qt/Qt.md)
+
+## python3写好的.py文件如何打包成exe
+
+可用一句命令打包：pyinstaller -F -w -i manage.ico app.py
+
+-F：打包为单文件
+
+-w：Windows程序，不显示命令行窗口
+
+-i：是程序图标，app.py是你要打包的py文件
+
+另外需要pywin32。
+
+安装方法：先跑pip install pywin32再跑pip install pyinstaller即可。
+
+
+# PyQt5项目
 
 ---
 
@@ -29,6 +47,3 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 
 https://github.com/892768447/PyQt
 
-## [Qt Designer](./qt/designer.md)
-
-## [Qt](./qt/Qt.md)
