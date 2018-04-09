@@ -51,6 +51,8 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 
 https://github.com/892768447/PyQt
 
+https://github.com/HuberTRoy/MusicBox
+
 ## Qt 实战
 
 https://blog.csdn.net/liang19890820/article/details/50277095
