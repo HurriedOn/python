@@ -46,6 +46,8 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 
 拷贝pyqt安装目录中搜索platform文件夹，整个复制到打包的exe目录
 
+## PyQt教程
+https://zhuanlan.zhihu.com/xdbcb8
 
 ## PyQt5小项目
 
