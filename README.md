@@ -58,3 +58,6 @@ https://github.com/HuberTRoy/MusicBox
 ## Qt 实战
 
 https://blog.csdn.net/liang19890820/article/details/50277095
+
+## pyqt下QTableWidget使用方法小结
+https://blog.csdn.net/vah101/article/details/6215066
