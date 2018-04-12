@@ -61,3 +61,13 @@ https://blog.csdn.net/liang19890820/article/details/50277095
 
 ## pyqt下QTableWidget使用方法小结
 https://blog.csdn.net/vah101/article/details/6215066
+
+```py
+#根据内容改变列宽，用户与程序不能改变列宽
+self.table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+
+#根据空间，自动改变列宽，用户与程序不能改变列宽
+self.table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
+```
+
+
