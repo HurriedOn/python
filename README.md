@@ -70,4 +70,13 @@ self.table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeT
 self.table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
 ```
 
+```py
+# 合并单元格 第1行6列，下合并3右和并2格
+self.table.setSpan(0,5,3,2)
+
+#设置指定单元格不可编辑  第1行第3列
+item0 = QtWidgets.QTableWidgetItem()
+item0.setFlags( QtCore.Qt.ItemIsEnabled)
+self.table.setItem(0, 3, item0)
+```
 
