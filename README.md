@@ -79,4 +79,7 @@ item0 = QtWidgets.QTableWidgetItem()
 item0.setFlags( QtCore.Qt.ItemIsEnabled)
 self.table.setItem(0, 3, item0)
 ```
-
+## python工具
+```py
+python -m pyqtgraph.examples
+```
