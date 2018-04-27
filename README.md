@@ -83,3 +83,4 @@ self.table.setItem(0, 3, item0)
 ```py
 python -m pyqtgraph.examples
 ```
+## [python 中遇到的bug](./bug.md)
