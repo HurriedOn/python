@@ -34,3 +34,22 @@ if sys.version_info >= (3,):
         except UnicodeDecodeError:
             return s.decode('utf_8')
 ```
+
+### pyinstaller 打包时报错
+
+环境：
+
+* Win10
+* Python3.6.4(Anaconda最新版)
+* PyInstaller: 3.3.1
+
+运行 pyinstaller -F -w -i manage.ico main.py 错误信息：
+
+```py
+'utf-8' codec can't decode byte 0xce in position 122: invalid continuation....
+```
+
+#### 解决方法：CMD中输入
+```py
+CHCP 65001
+```
